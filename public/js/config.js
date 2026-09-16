@@ -1,3 +1,3 @@
 var API_BASE = (window.location.protocol === 'file:')
     ? 'http://localhost:5001'
-    : window.location.origin;
+    : 'https://umkm-kasih-ibu-production.up.railway.app';
