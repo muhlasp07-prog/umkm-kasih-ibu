@@ -1,0 +1,219 @@
+.login-box {
+    max-width: 340px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.login-box h2 { color: #0b5b3c; text-align: center; }
+.login-box .subtitle { text-align: center; color: #888; font-size: 13px; margin-bottom: 20px; }
+
+.login-box label { display: block; margin-top: 12px; font-size: 13px; color: #333; }
+.login-box input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-box button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #0b5b3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.login-box button:hover { background: #094a30; }
+
+.error-msg {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.btn-logout, .btn-tambah {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-right: 8px;
+}
+.btn-logout { background: #ccc; color: #333; }
+.btn-tambah { background: #0b5b3c; color: white; }
+
+#form-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+#form-box label { display: block; margin-top: 10px; font-size: 13px; }
+#form-box input, #form-box select, #form-box textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-actions { margin-top: 15px; }
+.form-actions button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-simpan { background: #0b5b3c; color: white; }
+#btn-batal { background: #eee; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+th { background: #f0f0f0; }
+.aksi-btn {
+    padding: 4px 8px;
+    margin-right: 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.aksi-edit { background: #fff3cd; color: #856404; }
+.aksi-hapus { background: #f8d7da; color: #721c24; }
+
+.galeri-foto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.galeri-foto .foto-item {
+    position: relative;
+    width: 120px;
+}
+.galeri-foto img {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.galeri-foto .foto-caption {
+    font-size: 11px;
+    color: #666;
+    margin-top: 3px;
+}
+.galeri-foto .btn-hapus-foto {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background: rgba(255,0,0,0.8);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.aksi-foto { background: #d1ecf1; color: #0c5460; }
+
+.admin-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+.tab-btn {
+    padding: 10px 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+.tab-btn.active {
+    color: #0b5b3c;
+    font-weight: 600;
+    border-bottom-color: #0b5b3c;
+}
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+#pengaturan-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+#pengaturan-box label { display: block; margin-top: 10px; font-size: 13px; }
+#pengaturan-box input, #pengaturan-box textarea {
+    width: 100%;
+    padding: 7px;
+    margin-top: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.badge-publikasi {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+.badge-terbit { background: #d4edda; color: #155724; }
+.badge-draft { background: #fff3cd; color: #856404; }
+
+.aksi-publish { background: #d4edda; color: #155724; }
+.aksi-unpublish { background: #e2e3e5; color: #383d41; }
+.aksi-preview { background: #cce5ff; color: #004085; text-decoration: none; display: inline-block; }
+
+.password-wrap {
+    position: relative;
+}
+.password-wrap input {
+    padding-right: 38px !important;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0.5;
+    user-select: none;
+}
+
+.login-logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin: 0 auto 14px;
+    background: white;
+    padding: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}

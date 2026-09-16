@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - UMKM Kasih Ibu</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard Admin</h1>
+        <p id="welcome-text"></p>
+    </header>
+
+    <div class="container">
+        <button id="btn-logout" class="btn-logout">Logout</button>
+
+        <div class="admin-tabs">
+            <button class="tab-btn active" data-tab="tab-produk">Kelola Produk</button>
+            <button class="tab-btn" data-tab="tab-pengaturan" id="tab-btn-pengaturan">Pengaturan Usaha</button>
+        </div>
+
+        <!-- TAB: KELOLA PRODUK -->
+        <div id="tab-produk" class="tab-content active">
+            <button id="btn-tambah" class="btn-tambah">+ Tambah Produk</button>
+
+            <div id="form-box" style="display:none;">
+                <h3 id="form-title">Tambah Produk</h3>
+                <input type="hidden" id="produk-id">
+
+                <label>Nama Produk</label>
+                <input type="text" id="f-nama" required>
+
+                <label>Kategori</label>
+                <select id="f-kategori">
+                    <option value="kerajinan">Kerajinan Tangan (Daur Ulang Plastik)</option>
+                    <option value="kuliner">Kuliner (Bawang Goreng, dll)</option>
+                    <option value="lainnya">Lainnya</option>
+                </select>
+
+                <label>Harga Jual (Rp, opsional)</label>
+                <input type="number" id="f-harga" placeholder="Contoh: 150000">
+
+                <label>Harga Sebelum Diskon (Rp, opsional — kosongkan kalau tidak ada diskon)</label>
+                <input type="number" id="f-harga-coret" placeholder="Contoh: 200000">
+
+                <label>Deskripsi Produk</label>
+                <textarea id="f-deskripsi" rows="4" placeholder="Ceritakan produk ini secara umum"></textarea>
+
+                <label>Spesifikasi (satu baris per info, format "Label: Isi")</label>
+                <textarea id="f-spesifikasi" rows="4" placeholder="Bahan: Daur ulang plastik&#10;Ukuran: 30 x 25 x 12 cm&#10;Berat: 250 gram"></textarea>
+
+                <label>Keunggulan (satu baris per poin)</label>
+                <textarea id="f-keunggulan" rows="4" placeholder="Bahan ramah lingkungan&#10;Kuat dan tahan lama&#10;Motif khas lokal"></textarea>
+
+                <div id="publish-option" style="display:none;">
+                    <label style="display:flex; align-items:center; gap:8px; margin-top:14px;">
+                        <input type="checkbox" id="f-publish" style="width:auto;">
+                        Publikasikan langsung (kalau tidak dicentang, tersimpan sebagai Draft)
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button id="btn-simpan">Simpan</button>
+                    <button id="btn-batal" type="button">Batal</button>
+                </div>
+            </div>
+
+            <div id="foto-box" style="display:none;">
+                <h3>Kelola Foto - <span id="foto-produk-nama"></span></h3>
+                <input type="hidden" id="foto-produk-id">
+
+                <label>Nama Varian (opsional, misal "Ukuran Besar", "Motif Bunga")</label>
+                <input type="text" id="f-nama-varian" placeholder="Contoh: Ukuran Besar">
+
+                <label>Harga Varian Ini (opsional, kosongkan kalau sama dengan harga utama produk)</label>
+                <input type="number" id="f-harga-varian" placeholder="Contoh: 150000">
+
+                <label>Caption (opsional)</label>
+                <input type="text" id="f-caption">
+
+                <label>Pilih Foto</label>
+                <input type="file" id="f-foto" accept="image/*">
+
+                <div class="form-actions">
+                    <button id="btn-upload-foto">Upload</button>
+                    <button id="btn-tutup-foto" type="button">Tutup</button>
+                </div>
+
+                <div id="galeri-foto" class="galeri-foto"></div>
+            </div>
+
+            <table id="tabel-produk">
+                <thead>
+                    <tr>
+                        <th>Nama Produk</th>
+                        <th>Kategori</th>
+                        <th>Harga</th>
+                        <th>Publikasi</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="tabel-body">
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TAB: PENGATURAN USAHA -->
+        <div id="tab-pengaturan" class="tab-content">
+            <div id="pengaturan-box">
+                <h3>Profil & Kontak Usaha</h3>
+
+                <label>Nama Pemilik Usaha</label>
+                <input type="text" id="p-pemilik_usaha">
+
+                <label>Sejarah Usaha</label>
+                <textarea id="p-sejarah_usaha" rows="3"></textarea>
+
+                <label>Visi</label>
+                <textarea id="p-visi" rows="2"></textarea>
+
+                <label>Misi</label>
+                <textarea id="p-misi" rows="2"></textarea>
+
+                <label>Alamat</label>
+                <input type="text" id="p-alamat">
+
+                <label>Nomor WhatsApp (format: 628xxxxxxxxxx)</label>
+                <input type="text" id="p-whatsapp">
+
+                <label>Instagram</label>
+                <input type="text" id="p-instagram">
+
+                <label>Facebook</label>
+                <input type="text" id="p-facebook">
+
+                <div class="form-actions">
+                    <button id="btn-simpan-pengaturan">Simpan Pengaturan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/adminDashboard.js"></script>
+</body>
+</html>

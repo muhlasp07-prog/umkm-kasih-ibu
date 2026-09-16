@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil UMKM - Kasih Ibu</title>
+    <meta name="description" content="Profil UMKM Kasih Ibu — kerajinan tangan daur ulang plastik dan bawang goreng khas Kabupaten Bima. Kenali sejarah, visi, misi, dan pemilik usaha kami.">
+    <meta property="og:title" content="Profil UMKM Kasih Ibu">
+    <meta property="og:description" content="Kenali lebih dekat UMKM Kasih Ibu — kerajinan daur ulang dan kuliner khas Bima">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand-wrap">
+            <img src="img/logo-kasihibu.jpeg" alt="Logo UMKM Kasih Ibu" class="nav-logo">
+            <div class="nav-brand-text">
+                <strong>UMKM Kasih Ibu</strong>
+                <span>Produk Berkualitas, Dibuat dengan Cinta</span>
+            </div>
+        </div>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="profil.html">Profil UMKM</a>
+            <a href="index.html#produk">Produk</a>
+            <a href="index.html#galeri">Galeri</a>
+            <a href="profil.html#kontak">Kontak</a>
+        </div>
+        <div class="nav-search">
+            <input type="text" id="nav-search-input" placeholder="Cari produk...">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+        </div>
+    </nav>
+
+    <header class="hero hero-small" style="background-image: url('img/cover-profil.jpeg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+            <span class="hero-eyebrow">Tentang Kami</span>
+            <h1>Profil UMKM Kasih Ibu</h1>
+            <p>Mengenal lebih dekat perjalanan usaha kami</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Beranda</a>
+            <span class="breadcrumb-sep">&rsaquo;</span>
+            <span class="breadcrumb-current">Profil UMKM</span>
+        </div>
+
+        <div class="tentang-grid">
+            <div class="tentang-main">
+                <div class="tentang-card fade-in">
+                    <div class="tentang-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></div>
+                    <h2>Sejarah Usaha</h2>
+                    <p id="sejarah-usaha">Memuat...</p>
+                </div>
+
+                <div class="tentang-card fade-in">
+                    <div class="tentang-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                    <h2>Visi</h2>
+                    <p id="visi-usaha">Memuat...</p>
+                </div>
+
+                <div class="tentang-card fade-in">
+                    <div class="tentang-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+                    <h2>Misi</h2>
+                    <p id="misi-usaha">Memuat...</p>
+                </div>
+
+                <div class="tentang-card fade-in" id="kontak">
+                    <div class="tentang-card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.5A10 10 0 1012 2z"/></svg></div>
+                    <h2>Hubungi Kami</h2>
+                    <p id="kontak-alamat">Memuat...</p>
+                    <div class="kontak-social" id="kontak-social"></div>
+                    <a href="#" id="kontak-wa-btn" target="_blank" class="btn-hero btn-hero-primary" style="margin-top:14px; display:inline-block;">Chat via WhatsApp</a>
+
+                    <div class="maps-wrap" id="maps-wrap"></div>
+                </div>
+            </div>
+
+            <div class="tentang-side">
+                <div class="pimpinan-card fade-in">
+                    <img src="img/pemilik-kasihibu.jpeg" alt="Pemilik UMKM Kasih Ibu">
+                    <strong id="nama-pemilik">Memuat...</strong>
+                    <span>Pemilik UMKM Kasih Ibu</span>
+                </div>
+
+                <div class="tentang-card fade-in">
+                    <h2 style="font-size:15px;">Keunggulan Kami</h2>
+                    <ul style="margin-top:10px; padding-left:18px; font-size:13px; line-height:1.8; color:#444;">
+                        <li>Bahan berkualitas & higienis</li>
+                        <li>Produk daur ulang ramah lingkungan</li>
+                        <li>Dibuat langsung oleh pengrajin lokal Bima</li>
+                        <li>Harga bersahabat untuk keluarga</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="img/logo-kasihibu.jpeg" alt="Logo UMKM Kasih Ibu" class="footer-logo">
+                <div>
+                    <strong>UMKM Kasih Ibu</strong>
+                    <p>Produk Berkualitas, Dibuat dengan Cinta</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h5>Tautan Cepat</h5>
+                <a href="index.html">Beranda</a>
+                <a href="profil.html">Profil UMKM</a>
+                <a href="index.html#produk">Produk</a>
+                <a href="index.html#galeri">Galeri</a>
+            </div>
+            <div class="footer-col">
+                <h5>Ikuti Kami</h5>
+                <div id="footer-social-icons" class="footer-social-icons"></div>
+            </div>
+            <div class="footer-col">
+                <h5>Kontak</h5>
+                <p class="footer-address" id="footer-alamat">Memuat...</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 UMKM Kasih Ibu &mdash; Kabupaten Bima</p>
+            <a href="admin/login.html" class="footer-admin-link">Login Admin</a>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/navbarScroll.js"></script>
+    <script src="js/profil.js"></script>
+    <script src="js/scrollReveal.js"></script>
+</body>
+</html>
