@@ -1,0 +1,7 @@
+{
+    "name": "umkm-kasih-ibu-frontend",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "npx serve public -l $PORT"
+    }
+  }
