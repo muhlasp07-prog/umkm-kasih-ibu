@@ -62,7 +62,7 @@ function renderProdukGrid() {
             '<p>' + (item.deskripsi ? item.deskripsi.substring(0, 80) + (item.deskripsi.length > 80 ? '...' : '') : '') + '</p>' +
             hargaHtml +
             '<div class="produk-actions">' +
-            '<a href="produk-detail.html?id=' + item.id + '" class="btn-produk btn-produk-detail">Lihat Detail</a>' +
+            '<a href="produk-detail?id=' + item.id + '" class="btn-produk btn-produk-detail">Lihat Detail</a>' +
             '<a href="https://wa.me/6285333955993?text=' + encodeURIComponent('Halo, saya tertarik dengan produk ' + item.nama) + '" target="_blank" class="btn-produk btn-produk-wa">WhatsApp</a>' +
             '</div></div>';
 
